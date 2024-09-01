@@ -1,0 +1,213 @@
+.container {
+  max-width: 1400px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poly:ital@0;1&display=swap");
+
+body {
+  font-family: "Poly", serif;
+  margin: 0 auto;
+}
+*{
+  scroll-behavior: smooth;
+}
+:root {
+  --bg-color: rgb(135, 84, 58);
+}
+
+header {
+  background-color: var(--bg-color);
+}
+
+header img {
+  width: 200px;
+  max-height: 100px;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+  border: 2px rgb(82, 48, 31) solid;
+  border-radius: 7px;
+  background-color: rgb(92, 54, 35);
+}
+
+header a:hover {
+  color: rgb(92, 54, 35);
+  padding: 5px;
+  border: 2px rgb(82, 48, 31) solid;
+  border-radius: 7px;
+  background-color: #fff;
+}
+
+header .logo {
+  transform: translate(30%);
+}
+
+h2 {
+  color: var(--bg-color);
+  font-weight: 500;
+}
+
+.card img {
+  aspect-ratio: 5/4;
+  object-fit: cover;
+}
+
+.card p {
+  font-size: 15px;
+}
+
+.card h5 {
+  color: var(--bg-color);
+}
+
+.card {
+  height: 528px;
+}
+
+.herro_banner {
+  background-image: url(../img/banner.jpeg);
+  object-fit: cover;
+  aspect-ratio: 13/8;
+  color: #ffff;
+  background-repeat: no-repeat;
+}
+
+.herro_banner p {
+  color: #fff;
+  width: 530px;
+  text-align: center;
+}
+
+.banner_text {
+  flex-direction: column;
+  transform: translateY(75%);
+}
+
+.banner_text h1 {
+  font-weight: 500;
+}
+
+.banner_text a {
+  text-decoration: none;
+  color: #000;
+  padding: 14px;
+  border: #0b0b0b 3px solid;
+  border-radius: 28px;
+  font-weight: 500;
+  background: linear-gradient(0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(251, 245, 10, 0.9749848181460083) 100%);
+}
+
+.banner_text a:hover {
+  text-decoration: none;
+  color: #000;
+  padding: 14px;
+  border: #0b0b0b 3px solid;
+  border-radius: 28px;
+  background: linear-gradient(0deg,
+      rgba(24, 255, 3, 1) 0%,
+      rgba(255, 255, 255, 0.9749848181460083) 100%);
+}
+
+.content img {
+  object-fit: cover;
+  aspect-ratio: 12/9;
+  
+}
+.text{
+  padding: 0 10px;
+}
+
+.content {
+  margin-top: 10px;
+  flex-wrap: wrap;
+  background-color: #fff0e4;
+}
+
+.content .text {
+  flex-direction: column;
+}
+
+.content h3 {
+  font-size: 35px;
+  font-weight: 700px;
+}
+footer{
+  background-color: #000;
+  color: #fff;
+}
+footer p{
+  text-align: center;
+  text-transform: capitalize;
+}
+
+
+
+
+
+
+/* mobile device */
+
+@media only screen and (max-width: 719px) {
+  body {
+    margin: 0 1px;
+  }
+
+  header a {
+    font-size: 12px;
+  }
+
+  header img {
+    width: 150px;
+    max-height: 80px;
+  }
+
+  header .logo {
+    transform: translate(25%);
+  }
+
+  .card img {
+    aspect-ratio: 4/3;
+  }
+
+  .card {
+    height: 550px;
+  }
+
+  .herro_banner {
+    aspect-ratio: 9/16;
+    padding: 0 20px;
+  }
+
+  .banner_text h1 {
+    font-size:35px;
+    text-align: center;
+  }
+
+  .banner_text p {
+    margin: 0 10px;
+  }
+  .content h3{
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  
+  .one{
+    flex-direction: column-reverse;
+
+  }
+  .two{
+
+  }
+  .three{
+    flex-direction: column-reverse;
+  }
+
+
+
+}
